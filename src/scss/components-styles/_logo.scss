@@ -1,0 +1,23 @@
+.logo {
+  background-color: rgba(30, 30, 30, 0.8);
+  height: 100%;
+  padding: 15px;
+
+  .logo-text {
+    position: relative;
+    width: fit-content;
+  }
+  p {
+    font-size: calc(30px + (70 - 30) * ((100vw - 320px) / 1430));
+    line-height: calc(42px + (94 - 42) * ((100vw - 320px) / 1430));
+    font-weight: 500;
+    color: #fff;
+  }
+
+  .logo-img {
+    position: absolute;
+    width: calc(42px + (94 - 42) * ((100vw - 320px) / 1430));
+    top: 0px;
+    right: -3px;
+  }
+}

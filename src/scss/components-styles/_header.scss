@@ -1,0 +1,41 @@
+//header
+
+.header {
+  background-color: #fff;
+  text-align: center;
+  font-size: 2.4rem;
+  position: relative;
+  z-index: 100;
+  position: sticky;
+  top: 0;
+  height: 100%;
+
+  @media (max-width: 1000px) {
+    font-size: 2rem;
+  }
+}
+
+.header-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items:end;
+}
+
+.visible {
+  top: 0;
+  transition: 0.3 ease-in-out;
+  display: block;
+}
+
+@keyframes appearMenu {
+  from {
+    height: 0px;
+    opacity: 0;
+  }
+
+  to {
+    height: 100vh;
+    opacity: 0.95;
+  }
+}
