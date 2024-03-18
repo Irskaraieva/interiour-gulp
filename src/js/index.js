@@ -1,4 +1,21 @@
 import mobileNav from './modules/mobile-nav.js';
+import Swiper from 'swiper/bundle';
+import 'swiper/css/bundle';
+
+const swiper = new Swiper('.swiper', {  
+   
+    slidesPerView: 2,
+    spaceBetween: 18,
+
+    navigation: {
+      nextEl: '.button-next',
+      prevEl: '.button-prev',
+    },
+  
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  });
 
 const nav = document.getElementById('nav');
 const navMobBtn = document.getElementById('nav-mob-btn');
