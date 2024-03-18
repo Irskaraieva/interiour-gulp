@@ -429,9 +429,14 @@ label {
   background-color: #fff;
   display: flex;
 }
+@media (max-width: 1000px) {
+  .offers-swiper-wrapper {
+    padding: 0 20px;
+  }
+}
 .offers-swiper-wrapper .offers-card {
   position: relative;
-  height: 380px;
+  height: calc(260px + 120 * (100vw - 360px) / 1400);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -478,7 +483,7 @@ label {
   background: rgba(164, 85, 10, 0.9);
   color: #fff;
   font-weight: 500;
-  margin-top: 45px;
+  margin-top: calc(26px + 19 * (100vw - 360px) / 1400);
   transition: all 0.3s;
 }
 .offers-swiper-wrapper .offers-card .offers-card-offer button:hover {
@@ -555,8 +560,8 @@ label {
   z-index: 80;
   top: 43%;
   left: 5px;
-  width: 80px;
-  height: 80px;
+  width: calc(48px + 32 * (100vw - 360px) / 1400);
+  height: calc(48px + 32 * (100vw - 360px) / 1400);
   border-radius: 50%;
   background-color: #fff;
   box-shadow: 0 4px 11px 0 rgba(0, 0, 0, 0.25);
