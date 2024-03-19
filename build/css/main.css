@@ -338,22 +338,6 @@ label {
     font-size: 14px;
   }
 }
-.best-sellers-nav .sort-coner .select-wrapper div {
-  width: 20px;
-  height: 20px;
-  background-color: black;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.3s;
-}
-.best-sellers-nav .sort-coner .select-wrapper div img, .best-sellers-nav .sort-coner .select-wrapper div picture {
-  width: 56%;
-  height: auto;
-  transform: rotate(180deg);
-  transition: all 0.3s;
-}
 .best-sellers-nav .sort-coner .select-wrapper ul {
   position: absolute;
   top: 103%;
@@ -389,19 +373,26 @@ label {
 }
 .best-sellers-nav .sort-coner .select-wrapper .sort-arrow {
   background-color: #000;
-  display: flex;
-  align-items: center;
   width: 18px;
   height: 18px;
   background-color: black;
   border-radius: 50%;
   transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .best-sellers-nav .sort-coner .select-wrapper .sort-arrow img {
   height: 4px;
   width: 8px;
-  margin: 2px auto 0px auto;
   stroke: #fff;
+  transform: rotate(180deg);
+}
+.best-sellers-nav .sort-coner .select-wrapper .sort-arrow picture {
+  height: 4px;
+  width: 8px;
+}
+.best-sellers-nav .sort-coner .select-wrapper .sort-arrow picture img {
   transform: rotate(180deg);
 }
 
@@ -774,11 +765,18 @@ label {
   justify-content: center;
   transition: all 0.3s;
 }
-.offers-swiper-wrapper .offers-card .offers-card-discount button div img, .offers-swiper-wrapper .offers-card .offers-card-discount button div picture {
-  width: 56%;
-  height: auto;
+.offers-swiper-wrapper .offers-card .offers-card-discount button div img {
+  width: 12px;
+  height: 6px;
   transform: rotate(180deg);
   transition: all 0.3s;
+}
+.offers-swiper-wrapper .offers-card .offers-card-discount button div picture {
+  width: 12px;
+  height: 6px;
+}
+.offers-swiper-wrapper .offers-card .offers-card-discount button div picture img {
+  transform: rotate(180deg);
 }
 .offers-swiper-wrapper .offers-card .offers-card-discount button span {
   font-size: 16px;
@@ -790,7 +788,7 @@ label {
   background-color: rgb(34, 34, 34);
 }
 .offers-swiper-wrapper .offers-card .offers-card-discount button:hover img {
-  transform: rotate(0deg);
+  transform: rotate(90deg);
 }
 .offers-swiper-wrapper .custom-buttons {
   width: 100%;
