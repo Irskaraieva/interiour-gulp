@@ -57,6 +57,30 @@ window.addEventListener('resize', function () {
     }
 });
 
+//bestsellers button select
+const selectWrapper = document.getElementById('select-wrapper');
+const select = document.querySelector('.select');
+const sortArrow = document.querySelector('.sort-arrow');
+const selectedItem = document.querySelector('.selected-item');
+
+selectWrapper.addEventListener('click', function(event) {
+    const target = event.target;
+    const isVisible = select.classList.contains('is-visible');
+
+    if (target.tagName === 'LI') {
+        selectedItem.textContent = target.textContent;
+    }
+    
+    if (isVisible) {
+        select.classList.remove('is-visible');
+        sortArrow.classList.remove('rotate');
+    } else {
+        select.classList.add('is-visible');
+        sortArrow.classList.add('rotate');
+    }
+});
+
+
 
 
 

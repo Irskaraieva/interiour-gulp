@@ -1,0 +1,282 @@
+[
+    {
+        "id": 1,
+        "name": "Muren Armchairs",
+        "brand": "IKEA",
+        "price": 202,
+        "image": "prod1",
+        "type": "chair",
+        "category": "Furniture",
+        "itemCount": 1
+    },
+    {
+        "id": 2,
+        "name": "Oksamrin",
+        "brand": "IKEA",
+        "price": 408,
+        "image": "prod2",
+        "type": "table",
+        "category": "Furniture",
+        "itemCount": 1
+    },
+    {
+        "id": 3,
+        "name": "Strandmon",
+        "brand": "IKEA",
+        "price": 500,
+        "image": "prod3",
+        "type": "sofa",
+        "category": "Furniture",
+        "itemCount": 1
+    },
+    {
+        "id": 4,
+        "name": "Friday Morning",
+        "brand": "Americon Signature",
+        "price": 420,
+        "image": "prod4",
+        "type": "footstool",
+        "category": "Furniture",
+        "itemCount": 1
+    },
+    {
+        "id": 5,
+        "name": "Ekenaset",
+        "brand": "Office Signature",
+        "price": 650,
+        "image": "prod5",
+        "type": "office",
+        "category": "Furniture",
+        "itemCount": 1
+    },
+    {
+        "id": 6,
+        "name": "Ekerokch",
+        "brand": "iFurnholic",
+        "price": 390,
+        "image": "prod1",
+        "type": "chair",
+        "category": "Furniture",
+        "itemCount": 1
+    },
+    {
+        "id": 7,
+        "name": "Pelloram",
+        "brand": "Informa",
+        "price": 600,
+        "image": "prod2",
+        "type": "chair",
+        "category": "Plants",
+        "itemCount": 1
+    },
+    {
+        "id": 8,
+        "name": "Remsta",
+        "brand": "iFurnholic",
+        "price": 300,
+        "image": "prod3",
+        "type": "chair",
+        "category": "Plants",
+        "itemCount": 1
+    },
+    {
+        "id": 9,
+        "name": "Ecovisund",
+        "brand": "Dove's Furniture",
+        "price": 1020,
+        "image": "prod4",
+        "type": "chair",
+        "category": "Plants",
+        "itemCount": 1
+    },
+    {
+        "id": 10,
+        "name": "Poang",
+        "brand": "IKEAs",
+        "price": 407,
+        "image": "prod5",
+        "type": "chair",
+        "category": "Plants",
+        "itemCount": 1
+    },
+    {
+        "id": 11,
+        "name": "Vedbock",
+        "brand": "Americon Signatures",
+        "price": 563,
+        "image": "prod1",
+        "type": "chair",
+        "category": "Plants",
+        "itemCount": 1
+    },
+    {
+        "id": 12,
+        "name": "Muren Plants",
+        "brand": "iFurnholigist",
+        "price": 425,
+        "image": "prod2",
+        "type": "chair",
+        "category": "Plants",
+        "itemCount": 1
+    },
+    {
+        "id": 13,
+        "name": "Nolimet",
+        "brand": "Informator",
+        "price": 630,
+        "image": "prod3",
+        "type": "chair",
+        "category": "Plants",
+        "itemCount": 1
+    },
+    {
+        "id": 14,
+        "name": "Soderhamn",
+        "brand": "Dove's Furnitures",
+        "price": 398,
+        "image": "prod4",
+        "type": "chair",
+        "category": "Kitchen",
+        "itemCount": 1
+    },
+    {
+        "id": 15,
+        "name": "Edera Chair",
+        "brand": "Dove's Furnitures",
+        "price": 240,
+        "image": "prod1",
+        "type": "chair",
+        "category": "Kitchen",
+        "itemCount": 1
+    },
+    {
+        "id": 16,
+        "name": "Oksamyt",
+        "brand": "Informator",
+        "price": 495,
+        "image": "prod2",
+        "type": "table",
+        "category": "Kitchen",
+        "itemCount": 1
+    },
+    {
+        "id": 17,
+        "name": "Strandsof",
+        "brand": "IKEAs",
+        "price": 560,
+        "image": "prod3",
+        "type": "sofa",
+        "category": "Workspace",
+        "itemCount": 1
+    },
+    {
+        "id": 18,
+        "name": "Friday Workspace",
+        "brand": "Dove's Furnitures",
+        "price": 480,
+        "image": "prod4",
+        "type": "footstool",
+        "category": "Workspace",
+        "itemCount": 1
+    },
+    {
+        "id": 19,
+        "name": "Ekenofoce",
+        "brand": "Dove's Furnitures",
+        "price": 630,
+        "image": "prod5",
+        "type": "office",
+        "category": "Workspace",
+        "itemCount": 1
+    },
+    {
+        "id": 20,
+        "name": "Ekero",
+        "brand": "iFurnholigist",
+        "price": 390,
+        "image": "prod1",
+        "type": "chair",
+        "category": "Workspace",
+        "itemCount": 1
+    },
+    {
+        "id": 21,
+        "name": "Pello",
+        "brand": "Informator",
+        "price": 650,
+        "image": "prod2",
+        "type": "chair",
+        "category": "Workspace",
+        "itemCount": 1
+    },
+    {
+        "id": 22,
+        "name": "Revestan",
+        "brand": "IKEA",
+        "price": 300,
+        "image": "prod3",
+        "type": "chair",
+        "category": "Workspace",
+        "itemCount": 1
+    },
+    {
+        "id": 23,
+        "name": "Ecolsund",
+        "brand": "Informator",
+        "price": 1020,
+        "image": "prod4",
+        "type": "chair",
+        "category": "Kitchen",
+        "itemCount": 1
+    },
+    {
+        "id": 24,
+        "name": "Diang",
+        "brand": "IKEA",
+        "price": 407,
+        "image": "prod5",
+        "type": "chair",
+        "category": "Kitchen",
+        "itemCount": 1
+    },
+    {
+        "id": 25,
+        "name": "Vedbo",
+        "brand": "iFurnholigist",
+        "price": 563,
+        "image": "prod1",
+        "type": "chair",
+        "category": "Workspace",
+        "itemCount": 1
+    },
+    {
+        "id": 26,
+        "name": "Muren",
+        "brand": "iFurnholigist",
+        "price": 425,
+        "image": "prod2",
+        "type": "chair",
+        "category": "Workspace",
+        "itemCount": 1
+    },
+    {
+        "id": 27,
+        "name": "Nolmyra",
+        "brand": "Dove's Furniture",
+        "price": 630,
+        "image": "prod3",
+        "type": "chair",
+        "category": "Furniture",
+        "itemCount": 1
+    },
+    {
+        "id": 28,
+        "name": "Soderhamn",
+        "brand": "Dove's Furniture",
+        "price": 330,
+        "image": "prod4",
+        "type": "chair",
+        "category": "Furniture",
+        "itemCount": 1
+    }
+]
