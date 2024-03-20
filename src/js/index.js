@@ -22,6 +22,12 @@ const swiper = new Swiper('.swiper', {
         },
     },
 
+    scrollbar: {
+        el: ".swiper-scrollbar",
+        draggable: true,
+        snapOnRelease: true,
+    },
+
     navigation: {
         nextEl: '.button-next',
         prevEl: '.button-prev',
@@ -51,7 +57,7 @@ const secondSwiper = new Swiper('.second-swiper', {
             slidesPerView: 3,
             slidesPerGroup: 1,
         },
-        
+
         500: {
             slidesPerView: 2.5,
             slidesPerGroup: 1,
