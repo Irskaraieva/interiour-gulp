@@ -32,6 +32,49 @@ const swiper = new Swiper('.swiper', {
     },
 });
 
+const secondSwiper = new Swiper('.second-swiper', {
+
+
+    spaceBetween: 18,
+
+    breakpoints: {
+        1300: {
+            slidesPerView: 4.5,
+            slidesPerGroup: 2,
+        },
+        1000: {
+            slidesPerView: 3.5,
+            slidesPerGroup: 1,
+        },
+
+        800: {
+            slidesPerView: 3,
+            slidesPerGroup: 1,
+        },
+        
+        500: {
+            slidesPerView: 2.5,
+            slidesPerGroup: 1,
+        },
+
+
+        340: {
+            slidesPerView: 1.5,
+            slidesPerGroup: 1,
+        },
+
+        280: {
+            slidesPerView: 1,
+            slidesPerGroup: 1,
+        },
+    },
+
+
+    scrollbar: {
+        el: '.swiper-scrollbar',
+    },
+});
+
 const nav = document.getElementById('nav');
 const navMobBtn = document.getElementById('nav-mob-btn');
 const navLinks = document.querySelectorAll('.nav-list li');

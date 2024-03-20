@@ -49,6 +49,11 @@ gulp.task('html:dev', function () {
         .pipe(browserSync.stream());
 });
 
+gulp.task('helpers:dev', function () {
+    return gulp.src('./src/helpers/**/*')
+        .pipe(changed('./build/helpers/'))
+        .pipe(gulp.dest('./build/helpers/'))
+});
 
 gulp.task('sass:dev', function () {
     return gulp.src('./src/scss/*.scss')
@@ -102,4 +107,5 @@ gulp.task('watch:dev', function () {
     gulp.watch('./src/fonts/**/*', gulp.parallel('fonts:dev')).on('change', browserSync.reload);
     gulp.watch('./src/files/**/*', gulp.parallel('files:dev')).on('change', browserSync.reload);
     gulp.watch('./src/js/**/*.js', gulp.parallel('js:dev')).on('change', browserSync.reload);
+    gulp.watch('./src/helpers/**/*', gulp.parallel('helpers:dev')).on('change', browserSync.reload);
 });

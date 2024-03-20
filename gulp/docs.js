@@ -48,6 +48,12 @@ gulp.task('clean:docs', function (done) {
     done();
 });
 
+gulp.task('helpers:docs', function () {
+    return gulp.src('./src/helpers/**/*')
+        .pipe(changed('./docs/helpers/'))
+        .pipe(gulp.dest('./docs/helpers/'))
+});
+
 
 gulp.task('html:docs', function () {
     return gulp.src(['./src/html/**/*.html', '!./src/html/components/*.html'])
