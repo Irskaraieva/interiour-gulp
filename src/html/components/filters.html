@@ -1,0 +1,32 @@
+<aside class="filter-wrapper">
+    <div class="fiter-content">
+            @@include('./logo.html') 
+        <div class="filter-header">
+            <h2>Filter</h2>
+            <span class="reset">Reset Filter</span>
+        </div>
+        <section class="filter-store-wrapper">
+            <h2>
+                <span class="filter-store">Store</span>
+                <div class="filter-arrow">
+                    <img src="./img/global-images/arrow.png" alt="arrow">
+                </div>
+            </h2>
+                <ul class="filter-store-list">
+                    <li class="filter-store-item">
+                        <div class="filter-item-box">
+                            <img src="./img/global-images/mark.png" alt="mark">
+                        </div>
+                        <span>Ikea</span>
+                    </li>
+                    <li class="filter-store-item">
+                        <div class="filter-item-box checked">
+                            <img src="./img/global-images/mark.png" alt="mark">
+                        </div>
+                        <span>Ikea</span>
+                    </li>
+                </ul>
+        </section>
+        @@include('./range.html')
+    </div>
+</aside>

@@ -1,4 +1,5 @@
 import mobileNav from './modules/mobile-nav.js';
+import range from './modules/range.js';
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 
@@ -86,6 +87,7 @@ const navMobBtn = document.getElementById('nav-mob-btn');
 const navLinks = document.querySelectorAll('.nav-list li');
 
 mobileNav();
+range();
 
 navLinks.forEach(li => {
     li.addEventListener('click', () => {
