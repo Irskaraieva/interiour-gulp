@@ -1,0 +1,34 @@
+[
+    {
+        "name": "Furniture",
+        "count": 102
+    },
+    {
+        "name": "WorkSpace",
+        "count": 40
+    },
+    {
+        "name": "Kitchen",
+        "count": 56
+    },
+    {
+        "name": "Plants",
+        "count": 42
+    },
+    {
+        "name": "Bathroom",
+        "count": 163
+    },
+    {
+        "name": "Storage",
+        "count": 30
+    },
+    {
+        "name": "Loundry",
+        "count": 14
+    },
+    {
+        "name": "Textiles",
+        "count": 55
+    }
+]

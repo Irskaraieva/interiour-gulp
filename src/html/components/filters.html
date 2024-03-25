@@ -25,6 +25,17 @@
                     @@loop('storeItem.html', './../helpers/stores.json')
                 </ul>
                 <div class="store-line"></div>
+
+            <h2>
+                <span class="filter-product">Products</span>
+                <div class="filter-arrow">
+                    <img src="./img/global-images/arrow.png" alt="arrow">
+                </div>
+            </h2>
+                <ul class="filter-products-list">
+                    @@loop('productItem.html', './../helpers/products.json')
+                </ul>
+                <div class="store-line"></div>
         </section>
         @@include('./range.html')
     </div>
