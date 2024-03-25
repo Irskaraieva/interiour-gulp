@@ -1,7 +1,7 @@
 function mobileNav() {
     const navMobBtn = document.getElementById('nav-mob-btn');
     const nav = document.getElementById('nav');
-    
+
     navMobBtn.onclick = (e) => {
         e.stopPropagation();
         document.body.classList.toggle('no-scroll');
@@ -11,8 +11,7 @@ function mobileNav() {
         } else {
             nav.style.display = 'none';
         }
-
-    };
+    }
 }
 
 export default mobileNav;

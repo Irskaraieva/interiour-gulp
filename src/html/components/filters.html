@@ -1,8 +1,17 @@
 <aside class="filter-wrapper">
-    <div class="fiter-content">
-            @@include('./logo.html') 
-        <div class="filter-header">
-            <h2>Filter</h2>
+    @@include('./logo.html') 
+    <div class="fiter-content">            
+        <div class="filter-header">            
+            <div class="filter">
+               <div class="filter-button">
+                    <div class="filter-button-l1"></div>
+                    <div class="filter-button-l2"></div>
+                    <div class="filter-button-l3"></div>
+                </div>
+             <h2>   
+                Filter
+            </h2>
+            </div>
             <span class="reset">Reset Filter</span>
         </div>
         <section class="filter-store-wrapper">
@@ -13,19 +22,9 @@
                 </div>
             </h2>
                 <ul class="filter-store-list">
-                    <li class="filter-store-item">
-                        <div class="filter-item-box">
-                            <img src="./img/global-images/mark.png" alt="mark">
-                        </div>
-                        <span>Ikea</span>
-                    </li>
-                    <li class="filter-store-item">
-                        <div class="filter-item-box checked">
-                            <img src="./img/global-images/mark.png" alt="mark">
-                        </div>
-                        <span>Ikea</span>
-                    </li>
+                    @@loop('storeItem.html', './../helpers/stores.json')
                 </ul>
+                <div class="store-line"></div>
         </section>
         @@include('./range.html')
     </div>

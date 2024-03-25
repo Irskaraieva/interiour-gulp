@@ -1,12 +1,20 @@
 [
-    "IKEA",
-    "Americon Signature",
-    "iFurnholic",
-    "Informa",
-    "Dove's Furniture",
-    "IKEAs",
-    "Amery Signatures",
-    "iFurnholigist",
-    "Informator",
-    "Dove's Furnitures"
+    {
+        "name": "IKEA"
+    },
+    {
+        "name": "Americon Signature"
+    },
+    {
+        "name": "iFurnholic"
+    },
+    {
+        "name": "Informa"
+    },
+    {
+        "name": "Dove's Furniture"
+    },
+    {
+        "name": "IKEAs"
+    }
 ]

@@ -18,23 +18,30 @@
     <script src="./js/index.bundle.js" defer></script>
     <title>Base page</title>
   </head>
-  <body>
-    <aside class="filter-wrapper">
-    <div class="fiter-content">
-            <div class="logo">
-  <div class="filter-button">
-    <div class="filter-button-l1"></div>
-    <div class="filter-button-l2"></div>
-    <div class="filter-button-l3"></div>
-  </div>
+  <body>    
+    
+    <div class="container"> 
+      <main class="main">
+        <aside class="filter-wrapper">
+    <div class="logo">
   <div class="logo-text">
     <p>Interiour</p>
     <img src="./img/global-images/ellipse.svg" alt="logo-img" class="logo-img">
   </div>
 </div>
  
-        <div class="filter-header">
-            <h2>Filter</h2>
+    <div class="fiter-content">            
+        <div class="filter-header">            
+            <div class="filter">
+               <div class="filter-button">
+                    <div class="filter-button-l1"></div>
+                    <div class="filter-button-l2"></div>
+                    <div class="filter-button-l3"></div>
+                </div>
+             <h2>   
+                Filter
+            </h2>
+            </div>
             <span class="reset">Reset Filter</span>
         </div>
         <section class="filter-store-wrapper">
@@ -46,18 +53,38 @@
             </h2>
                 <ul class="filter-store-list">
                     <li class="filter-store-item">
-                        <div class="filter-item-box">
-                            <img src="./img/global-images/mark.png" alt="mark">
-                        </div>
-                        <span>Ikea</span>
-                    </li>
-                    <li class="filter-store-item">
-                        <div class="filter-item-box checked">
-                            <img src="./img/global-images/mark.png" alt="mark">
-                        </div>
-                        <span>Ikea</span>
-                    </li>
+    <div class="filter-item-box checked">
+        <img src="./../img/global-images/mark.png" alt="mark">
+    </div>
+    <span>IKEA</span>
+</li><li class="filter-store-item">
+    <div class="filter-item-box checked">
+        <img src="./../img/global-images/mark.png" alt="mark">
+    </div>
+    <span>Americon Signature</span>
+</li><li class="filter-store-item">
+    <div class="filter-item-box checked">
+        <img src="./../img/global-images/mark.png" alt="mark">
+    </div>
+    <span>iFurnholic</span>
+</li><li class="filter-store-item">
+    <div class="filter-item-box checked">
+        <img src="./../img/global-images/mark.png" alt="mark">
+    </div>
+    <span>Informa</span>
+</li><li class="filter-store-item">
+    <div class="filter-item-box checked">
+        <img src="./../img/global-images/mark.png" alt="mark">
+    </div>
+    <span>Dove's Furniture</span>
+</li><li class="filter-store-item">
+    <div class="filter-item-box checked">
+        <img src="./../img/global-images/mark.png" alt="mark">
+    </div>
+    <span>IKEAs</span>
+</li>
                 </ul>
+                <div class="store-line"></div>
         </section>
         <div class="range">
     <div class="range-slider">
@@ -66,29 +93,16 @@
     <div class="range-input">
       <input type="range" class="min" min="0" max="2000" value="100" step="20">
       <input type="range" class="max" min="0" max="2000" value="1200" step="20">
-      <span class="min-price">$100</span>
-      <span class="max-price">$1200</span>
     </div>
-    <span class="start-price">$0</span>
-    <span class="end-price">$2000</span>
+    <span class="start-price">$100</span>
+    <span class="end-price">$1200</span>
   </div>
     </div>
 </aside>
-    <header class="header">
+    <div class="main-content">
+        <header class="header">
     <section class="container">
         <div class="header-content">
-            <div class="logo">
-  <div class="filter-button">
-    <div class="filter-button-l1"></div>
-    <div class="filter-button-l2"></div>
-    <div class="filter-button-l3"></div>
-  </div>
-  <div class="logo-text">
-    <p>Interiour</p>
-    <img src="./img/global-images/ellipse.svg" alt="logo-img" class="logo-img">
-  </div>
-</div>
-
             <nav class="nav" id="nav">
     <ul class="nav-list">
         <li><a href="./index.html" class='button-home'> Home</a></li>
@@ -115,8 +129,6 @@
 </header>
 
 
-    <main class="main">
-    <div class="container">
         <div class="offers">
   <h2 class="offers-header">
     Special Offers
@@ -1330,13 +1342,14 @@
 </div>
 </div>
   <div class="scrollbar">
-    <div class="swiper-scrollbar scrollbar">
-    
+    <div class="swiper-scrollbar scrollbar">    
     </div>
   </div>
 </section>
 
     </div>
 </main>
+    </div>
+    
   </body>
 </html>

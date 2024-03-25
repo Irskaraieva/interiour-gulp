@@ -78,7 +78,7 @@
   .min-price,
   .max-price {
     position: absolute;
-    top: 20px;
+    top: 12px;
     color: #fff;
   }
   .min-price {
@@ -86,5 +86,6 @@
   }
 
   .max-price {
+    top: 25px;
     right: 40%;
   }
