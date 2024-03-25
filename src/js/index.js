@@ -41,24 +41,25 @@ const swiper = new Swiper('.swiper', {
 
 const secondSwiper = new Swiper('.second-swiper', {
 
-
     spaceBetween: 18,
 
     breakpoints: {
-        1300: {
-            slidesPerView: 4.5,
+        1600: {
+            slidesPerView: 3.5,
             slidesPerGroup: 2,
         },
-        1000: {
-            slidesPerView: 3.5,
+        1200: {
+            slidesPerView: 3,
             slidesPerGroup: 1,
         },
-
+        1000: {
+            slidesPerView: 2.5,
+            slidesPerGroup: 1,
+        },
         800: {
             slidesPerView: 3,
             slidesPerGroup: 1,
         },
-
         500: {
             slidesPerView: 2.5,
             slidesPerGroup: 1,

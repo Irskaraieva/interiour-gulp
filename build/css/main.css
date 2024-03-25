@@ -603,7 +603,7 @@ label {
 }
 
 .filter-wrapper {
-  width: 480px;
+  width: 25%;
   min-height: 100%;
   background-color: rgba(30, 30, 30, 0.8);
 }
