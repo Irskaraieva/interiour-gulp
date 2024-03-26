@@ -91,3 +91,10 @@ selectWrapper.addEventListener('click', function (event) {
         sortArrow.classList.add('rotate');
     };
 });
+
+//filter-button
+
+const filterButton = document.getElementById('filter-button');
+filterButton.addEventListener('click', () => {
+    filterButton.classList.toggle('active');
+});

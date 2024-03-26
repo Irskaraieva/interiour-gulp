@@ -17,7 +17,26 @@
     position: absolute;
     top: 35px;
     right: 20px;
+    z-index: 200;
     display: none;
+    transition: all .3s;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &.active div:nth-child(1){
+      transform: rotate(42deg) translate(4px, 5px);
+      width: 100%;
+    }
+    &.active div:nth-child(2){
+      opacity: 0;
+    }
+    &.active div:nth-child(3){
+      transform: rotate(-42deg) translate(5px, -4px);
+      width: 100%;
+    }
+
   }
 
   @media (max-width: 1000px) {
@@ -90,7 +109,7 @@
   }
 
   @media (max-width: 600px) {
-    padding-bottom: 65px;
+    padding-bottom: 70px;
   }
 }
 

@@ -860,7 +860,23 @@ label {
   position: absolute;
   top: 35px;
   right: 20px;
+  z-index: 200;
   display: none;
+  transition: all 0.3s;
+}
+.nav .filter-button:hover {
+  cursor: pointer;
+}
+.nav .filter-button.active div:nth-child(1) {
+  transform: rotate(42deg) translate(4px, 5px);
+  width: 100%;
+}
+.nav .filter-button.active div:nth-child(2) {
+  opacity: 0;
+}
+.nav .filter-button.active div:nth-child(3) {
+  transform: rotate(-42deg) translate(5px, -4px);
+  width: 100%;
 }
 @media (max-width: 1000px) {
   .nav {
@@ -932,7 +948,7 @@ label {
 }
 @media (max-width: 600px) {
   .nav-list {
-    padding-bottom: 65px;
+    padding-bottom: 70px;
   }
 }
 
