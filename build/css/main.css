@@ -847,6 +847,30 @@ label {
   flex-grow: 1;
   padding: 10px 15px 0px;
 }
+.nav .mobile-header {
+  display: none;
+  background-color: rgba(30, 30, 30, 0.877);
+}
+.nav .mobile-header .logo {
+  justify-content: flex-start;
+  padding: 15px;
+  width: 100%;
+}
+.nav .filter-button {
+  position: absolute;
+  top: 35px;
+  right: 20px;
+  display: none;
+}
+@media (max-width: 1000px) {
+  .nav {
+    padding: 0px;
+  }
+  .nav .mobile-header,
+  .nav .filter-button {
+    display: flex;
+  }
+}
 
 .nav-list {
   display: flex;
@@ -859,6 +883,7 @@ label {
   border-radius: 11px;
   background-color: #f6f6f6;
   justify-content: space-between;
+  position: relative;
 }
 .nav-list .button-home {
   border: 1.5px solid rgba(0, 0, 0, 0.7);
@@ -874,6 +899,11 @@ label {
 .nav-list .button-home:hover {
   background: #1e1e1e;
   color: #f6f6f6;
+}
+@media (max-width: 600px) {
+  .nav-list .button-home {
+    padding: 5px 18px;
+  }
 }
 .nav-list .vertical-line {
   display: block;
@@ -893,6 +923,17 @@ label {
   color: rgba(0, 0, 0, 0.9);
   width: fit-content;
   font-family: var(--font-abel);
+}
+@media (max-width: 1000px) {
+  .nav-list {
+    border-radius: 0px 0px 11px 11px;
+    padding: 15px;
+  }
+}
+@media (max-width: 600px) {
+  .nav-list {
+    padding-bottom: 65px;
+  }
 }
 
 .bell,
@@ -930,15 +971,38 @@ label {
   height: 60px;
   flex-grow: 0.4;
 }
+.input-box img {
+  position: absolute;
+  left: 5px;
+  top: 28%;
+}
 @media (max-width: 1400px) {
   .input-box {
     height: 52px;
   }
 }
-.input-box img {
-  position: absolute;
-  left: 5px;
-  top: 28%;
+@media (max-width: 1000px) {
+  .input-box {
+    position: absolute;
+    width: 40%;
+    height: 42px;
+    top: -110%;
+    right: 22%;
+  }
+  .input-box img {
+    height: 18px;
+    width: 18px;
+    top: 30%;
+  }
+}
+@media (max-width: 600px) {
+  .input-box {
+    width: 95%;
+    top: 50%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+  }
 }
 
 .input {
@@ -947,6 +1011,11 @@ label {
   border-radius: 11px;
   padding-left: 45px;
   font-family: var(--font-main);
+}
+@media (max-width: 1000px) {
+  .input {
+    padding-left: 32px;
+  }
 }
 
 .offers {
