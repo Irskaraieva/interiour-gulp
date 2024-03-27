@@ -93,8 +93,10 @@ selectWrapper.addEventListener('click', function (event) {
 });
 
 //filter-button
-
+const filterWrapper = document.getElementById('filter-wrapper');
 const filterButton = document.getElementById('filter-button');
+
 filterButton.addEventListener('click', () => {
     filterButton.classList.toggle('active');
+    filterWrapper.classList.toggle('active');
 });
