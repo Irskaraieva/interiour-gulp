@@ -100,3 +100,22 @@ filterButton.addEventListener('click', () => {
     filterButton.classList.toggle('active');
     filterWrapper.classList.toggle('active');
 });
+
+//open store list
+const openStoreList = document.getElementById('filter-store-arrow');
+const storeList = document.getElementById('filter-store-list');
+
+const openProductList = document.getElementById('filter-product-arrow');
+const productList = document.getElementById('filter-products-list');
+
+openStoreList.addEventListener('click', () => {
+    storeList.classList.toggle('hide-list');
+    openStoreList.classList.toggle('rotate');
+});
+
+openProductList.addEventListener('click', () => {
+    productList.classList.toggle('hide-list');
+    openProductList.classList.toggle('rotate');
+});
+
+
