@@ -624,6 +624,7 @@ label {
 @media (max-width: 1000px) {
   .filter-wrapper {
     position: absolute;
+    height: 100vh;
     z-index: 150;
     left: 100%;
     width: 0%;
@@ -656,7 +657,8 @@ label {
   .fiter-content {
     position: absolute;
     width: 400px;
-    height: auto;
+    height: calc(100vh - 70px);
+    overflow-y: auto;
     padding: 15px 25px 40px;
     right: 0;
     top: 70px;
