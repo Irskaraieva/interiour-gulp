@@ -34,3 +34,14 @@ productList.addEventListener('click', function(event) {
         filterItemBox.classList.toggle('checked');
     }
 });
+
+//reset filters
+
+const resetBtn = document.getElementById('reset');
+
+resetBtn.addEventListener('click', () => {
+    const checkedElements = document.querySelectorAll('.checked');
+    checkedElements.forEach((element) => {
+        element.classList.remove('checked');
+    });
+});
