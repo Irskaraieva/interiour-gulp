@@ -125,11 +125,21 @@
   overflow-y: auto;
   transition: all 0.3s ease;
 
+  li {
+    padding: 4px;
+    transition: all 0.3s;
+    &:hover {
+      border-radius: 5px;
+      cursor: pointer;
+      background-color: rgb(43, 42, 42);
+    }
+  }
+
   & li:not(:first-child) {
-    margin-top: 20px;
+    margin-top: 12px;
 
     @media (max-width: 1200px) {
-      margin-top: 15px;
+      margin-top: 8px;
     }
   }
 

@@ -738,14 +738,25 @@ label {
   overflow-y: auto;
   transition: all 0.3s ease;
 }
+.filter-store-list li,
+.filter-products-list li {
+  padding: 4px;
+  transition: all 0.3s;
+}
+.filter-store-list li:hover,
+.filter-products-list li:hover {
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: rgb(43, 42, 42);
+}
 .filter-store-list li:not(:first-child),
 .filter-products-list li:not(:first-child) {
-  margin-top: 20px;
+  margin-top: 12px;
 }
 @media (max-width: 1200px) {
   .filter-store-list li:not(:first-child),
   .filter-products-list li:not(:first-child) {
-    margin-top: 15px;
+    margin-top: 8px;
   }
 }
 @media (max-width: 1200px) {
@@ -1469,9 +1480,17 @@ label {
   }
 }
 .filter-item-box picture {
+  display: none;
   height: 11px;
+}
+.filter-item-box img {
+  display: none;
 }
 
 .checked {
   background: rgba(255, 195, 139, 0.9);
+}
+.checked img,
+.checked picture {
+  display: block;
 }

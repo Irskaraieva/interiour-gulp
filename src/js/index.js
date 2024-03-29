@@ -1,4 +1,5 @@
 import range from './modules/range.js';
+import filters from './modules/filters.js';
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 
@@ -77,7 +78,6 @@ const selectedItem = document.querySelector('.selected-item');
 selectWrapper.addEventListener('click', function (event) {
     const target = event.target;
     const isVisible = select.classList.contains('is-visible');
-    console.log("click");
 
     if (target.tagName === 'LI') {
         selectedItem.textContent = target.textContent;
@@ -109,22 +109,4 @@ window.addEventListener('resize', () => {
         document.body.classList.remove('no-scroll');
     }
 });
-
-//open store list
-const openStoreList = document.getElementById('filter-store-arrow');
-const storeList = document.getElementById('filter-store-list');
-
-const openProductList = document.getElementById('filter-product-arrow');
-const productList = document.getElementById('filter-products-list');
-
-openStoreList.addEventListener('click', () => {
-    storeList.classList.toggle('hide-list');
-    openStoreList.classList.toggle('rotate');
-});
-
-openProductList.addEventListener('click', () => {
-    productList.classList.toggle('hide-list');
-    openProductList.classList.toggle('rotate');
-});
-
 
