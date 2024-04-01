@@ -92,7 +92,7 @@ selectWrapper.addEventListener('click', function (event) {
     };
 });
 
-//filter-button
+//filter-button-mobile
 const filterWrapper = document.getElementById('filter-wrapper');
 const filterButton = document.getElementById('filter-button');
 
@@ -102,11 +102,50 @@ filterButton.addEventListener('click', () => {
     document.body.classList.toggle('no-scroll');
 });
 
-window.addEventListener('resize', () => { 
-    if (window.innerWidth > 1000) {        
+window.addEventListener('resize', () => {
+    if (window.innerWidth > 1000) {
         filterButton.classList.remove('active');
         filterWrapper.classList.remove('active');
         document.body.classList.remove('no-scroll');
     }
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+    const goodsWrapper = document.querySelector('.goods-wrapper');
+    const products = goodsWrapper.querySelectorAll('.swiper-slide');
+    const buttonsGroup = document.querySelector('.buttons-group');
+    const buttons = buttonsGroup.querySelectorAll('button');
+
+    let productType = 'All products';
+
+    buttons[0].classList.add('active');
+
+    buttonsGroup.addEventListener('click', function (event) {
+        const target = event.target;
+
+        if (target.tagName === 'BUTTON') {
+            productType = target.textContent.trim();
+            buttons.forEach(button => {
+                button.classList.remove('active');
+            });
+            target.classList.add('active');
+            filterProducts();
+        }
+    });
+
+    function filterProducts() {
+        products.forEach(product => {
+            const type = product.dataset.type.toLowerCase();
+            if (productType.toLowerCase() === 'all products' || type === productType.toLowerCase()) {
+                product.style.display = 'block';
+                product.style.visibility = 'visible';
+                secondSwiper.update();
+                
+            } else {
+                product.style.display = 'none';
+                product.style.visibility = 'hidden';
+                secondSwiper.update();
+            }
+        });
+    }
+});

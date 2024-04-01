@@ -74,6 +74,14 @@
     color: rgba(0, 0, 0, 0.9);
     width: fit-content;
     font-family: var(--font-abel);
+    border-bottom: 1px solid transparent;
+    transition: all .3s;
+
+    &:hover {
+      color: rgb(0, 0, 0);
+      border-bottom: 1px solid black;
+    }
+
   }
 
   @media (max-width: 1000px) {
