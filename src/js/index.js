@@ -70,27 +70,6 @@ const secondSwiper = new Swiper('.second-swiper', {
     },
 });
 
-const selectWrapper = document.getElementById('select-wrapper');
-const select = document.querySelector('.select');
-const sortArrow = document.querySelector('.sort-arrow');
-const selectedItem = document.querySelector('.selected-item');
-
-selectWrapper.addEventListener('click', function (event) {
-    const target = event.target;
-    const isVisible = select.classList.contains('is-visible');
-
-    if (target.tagName === 'LI') {
-        selectedItem.textContent = target.textContent;
-    };
-
-    if (isVisible) {
-        select.classList.remove('is-visible');
-        sortArrow.classList.remove('rotate');
-    } else {
-        select.classList.add('is-visible');
-        sortArrow.classList.add('rotate');
-    };
-});
 
 //filter-button-mobile
 const filterWrapper = document.getElementById('filter-wrapper');
@@ -111,6 +90,35 @@ window.addEventListener('resize', () => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
+    const selectWrapper = document.getElementById('select-wrapper');
+const select = document.querySelector('.select');
+const sortArrow = document.querySelector('.sort-arrow');
+const selectedItem = document.querySelector('.selected-item');
+
+selectWrapper.addEventListener('click', function (event) {
+    const target = event.target;
+    const isVisible = select.classList.contains('is-visible');
+
+    if (target.tagName === 'LI') {
+        selectedItem.textContent = target.textContent;
+        if (selectedItem.textContent === 'Low-Hight') {
+            sortProductsByPrice(true); 
+        } else if (selectedItem.textContent === 'Hight-low') {
+            sortProductsByPrice(false);
+        } else if (selectedItem.textContent === 'Name') {
+            sortProductsByName();
+        }
+    };
+
+    if (isVisible) {
+        select.classList.remove('is-visible');
+        sortArrow.classList.remove('rotate');
+    } else {
+        select.classList.add('is-visible');
+        sortArrow.classList.add('rotate');
+    };
+});
+
     const goodsWrapper = document.querySelector('.goods-wrapper');
     const products = goodsWrapper.querySelectorAll('.swiper-slide');
     const buttonsGroup = document.querySelector('.buttons-group');
@@ -147,5 +155,39 @@ document.addEventListener('DOMContentLoaded', () => {
                 secondSwiper.update();
             }
         });
+    }
+
+    function sortProductsByPrice(ascending) {
+        const sortedProducts = Array.from(products).sort((a, b) => {
+            const priceA = parseFloat(a.dataset.price);
+            const priceB = parseFloat(b.dataset.price);
+            return ascending ? priceA - priceB : priceB - priceA;
+        });
+    
+        const swiperWrapper = document.querySelector('.second-swiper .swiper-wrapper');
+        swiperWrapper.innerHTML = '';
+    
+        sortedProducts.forEach(product => {
+            swiperWrapper.appendChild(product);
+        });
+    
+        secondSwiper.update();
+    }
+
+    function sortProductsByName() {
+        const sortedProducts = Array.from(products).sort((a, b) => {
+            const nameA = a.dataset.name.toLowerCase();
+            const nameB = b.dataset.name.toLowerCase();
+            return nameA.localeCompare(nameB);
+        });
+            
+        const swiperWrapper = document.querySelector('.second-swiper .swiper-wrapper');
+        swiperWrapper.innerHTML = ''; 
+    
+        sortedProducts.forEach(product => {
+            swiperWrapper.appendChild(product);
+        });
+    
+        secondSwiper.update();
     }
 });
