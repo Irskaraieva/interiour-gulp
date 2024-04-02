@@ -1,0 +1,10 @@
+.goods-wrapper-best {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #D9D9D9;
+    gap: 5px; 
+    overflow-x: hidden;
+    overflow-y: auto;
+    max-height: 1000px;
+}

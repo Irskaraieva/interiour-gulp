@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abel&family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <script src="./js/index.bundle.js" defer></script>
+    <title>Bast Sellers</title>
+  </head>
+  <body>
+    <main class="main">
+      <div class="filter-button-mob" id="filter-button">
+          <div class="filter-button-l1"></div>
+          <div class="filter-button-l2"></div>
+          <div class="filter-button-l3"></div>
+     </div>
+          @@include('./components/filters.html')
+      <div class="main-content">
+          @@include('./components/header.html')          
+          <div class="best-sellers-nav">
+            <div class="buttons-group">
+              @@loop('./components/buttons.html', [ {"name":"All Products"}, {"name":"Chair"},
+              {"name":"Table"}, {"name":"Sofa"}, {"name":"FootStool"}, {"name":"Office"}
+              ])
+            </div>
+            <div class="sort-coner">
+              <span>Sort by</span>
+              <div class="select-wrapper" id="select-wrapper">
+                <div class="sort-arrow">
+                  <img src="./img/global-images/arrow.png" alt="arrow" />
+                </div>
+                <span class="selected-item">Low-Hight</span>
+                <ul class="select">
+                  <li>Low-Hight</li>
+                  <li>Hight-low</li>
+                  <li>Name</li>
+                  <li>Popularity</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <section class="goods-wrapper-best">
+            @@loop('./components/article.html', './../helpers/goods.json')
+          </section>
+      </div>
+
+  </main>
+  </body>
+</html>
