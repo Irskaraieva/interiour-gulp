@@ -269,7 +269,7 @@ label {
   transform: scale(1.3);
   cursor: pointer;
 }
-.article .stars-wrapper .cheked {
+.article .stars-wrapper .checked {
   fill: #f2d879;
 }
 .article .card-bottom {
@@ -714,7 +714,7 @@ label {
   transform: scale(1.3);
   cursor: pointer;
 }
-.card .stars-wrapper .cheked {
+.card .stars-wrapper .checked {
   fill: #f2d879;
 }
 .card .card-bottom {
@@ -1687,11 +1687,11 @@ label {
   display: none;
 }
 
-.checked {
+.checked-box {
   background: rgba(255, 195, 139, 0.9);
 }
-.checked img,
-.checked picture {
+.checked-box img,
+.checked-box picture {
   display: block;
 }
 

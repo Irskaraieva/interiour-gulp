@@ -1,5 +1,6 @@
 import range from './modules/range.js';
 import filters from './modules/filters.js';
+import allProducts from './modules/allProducts.js';
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 
@@ -214,7 +215,7 @@ document.addEventListener('DOMContentLoaded', () => {
          if (event.target.closest('.filter-store-item')) {
              const storeItem = event.target.closest('.filter-store-item');
              const filterItemBox = storeItem.querySelector('.filter-item-box');
-             filterItemBox.classList.toggle('checked');
+             filterItemBox.classList.toggle('checked-box');
              logCheckedSpanContent();
          }
      });
@@ -224,7 +225,7 @@ document.addEventListener('DOMContentLoaded', () => {
          if (event.target.closest('.filter-product-item')) {
              const storeItem = event.target.closest('.filter-product-item');
              const filterItemBox = storeItem.querySelector('.filter-item-box');
-             filterItemBox.classList.toggle('checked');
+             filterItemBox.classList.toggle('checked-box');
          }
      });
  
@@ -233,9 +234,9 @@ document.addEventListener('DOMContentLoaded', () => {
      const resetBtn = document.getElementById('reset');
  
      resetBtn.addEventListener('click', () => {
-         const checkedElements = document.querySelectorAll('.checked');
+         const checkedElements = document.querySelectorAll('.checked-box');
          checkedElements.forEach((element) => {
-             element.classList.remove('checked');            
+             element.classList.remove('checked-box');            
          });
          logCheckedSpanContent();
      });
@@ -248,7 +249,7 @@ document.addEventListener('DOMContentLoaded', () => {
              const div = item.querySelector('.filter-item-box');
              const span = item.querySelector('span');
  
-             if (div.classList.contains('checked')) {
+             if (div.classList.contains('checked-box')) {
                  console.log(span.innerHTML);
              }
          });
