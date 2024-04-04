@@ -12,6 +12,10 @@ body {
 .main-content {
   width: 75%;
   min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0;
 }
 @media (max-width: 1000px) {
   .main-content {
@@ -1535,6 +1539,19 @@ label {
   opacity: 0;
 }
 
+.goods-wrapper-best {
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #d9d9d9;
+  gap: 5px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  max-height: 900px;
+  padding: 0px 15px;
+}
+
 .range {
   position: relative;
   margin-top: 60px;
@@ -1693,15 +1710,4 @@ label {
 .checked-box img,
 .checked-box picture {
   display: block;
-}
-
-.goods-wrapper-best {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  background-color: #D9D9D9;
-  gap: 5px;
-  overflow-x: hidden;
-  overflow-y: auto;
-  max-height: 1000px;
 }

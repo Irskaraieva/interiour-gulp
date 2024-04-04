@@ -1,10 +1,9 @@
 <section class="best-sellers-wrapper">
   <header class="best-sellers-header">
     <h2>Best Sellers</h2>
-    <a href="./view-all-page.html">
+    <a href="./products.html">
       <span class="view-all"> View All </span>
     </a>
-    
   </header>
   <div class="best-sellers-nav">
     <div class="buttons-group">
@@ -30,9 +29,10 @@
   </div>
 </section>
 <section class="goods-wrapper second-swiper">
-  <div class="swiper-wrapper">@@loop('card.html', './../helpers/goods.json')</div>
+  <div class="swiper-wrapper">
+    @@loop('card.html', './../helpers/goods.json')
+  </div>
   <div class="scrollbar">
-    <div class="swiper-scrollbar scrollbar">    
-    </div>
+    <div class="swiper-scrollbar scrollbar"></div>
   </div>
 </section>

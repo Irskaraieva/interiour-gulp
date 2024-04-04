@@ -12,6 +12,10 @@ body {
 .main-content {
   width: 75%;
   min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0;
 
   @media (max-width: 1000px) {
     width: 100%;

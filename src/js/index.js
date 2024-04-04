@@ -1,6 +1,5 @@
 import range from './modules/range.js';
 import filters from './modules/filters.js';
-import allProducts from './modules/allProducts.js';
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 
@@ -71,7 +70,6 @@ const secondSwiper = new Swiper('.second-swiper', {
     },
 });
 
-
 //filter-button-mobile
 const filterWrapper = document.getElementById('filter-wrapper');
 const filterButton = document.getElementById('filter-button');
@@ -120,8 +118,7 @@ document.addEventListener('DOMContentLoaded', () => {
         };
     });
 
-    const goodsWrapper = document.querySelector('.goods-wrapper');
-    const products = goodsWrapper.querySelectorAll('.swiper-slide');
+    const products = document.querySelector('.goods-wrapper').querySelectorAll('.swiper-slide');
     const buttonsGroup = document.querySelector('.buttons-group');
     const buttons = buttonsGroup.querySelectorAll('button');
 
@@ -149,7 +146,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 product.style.display = 'block';
                 product.style.visibility = 'visible';
                 secondSwiper.update();
-
             } else {
                 product.style.display = 'none';
                 product.style.visibility = 'hidden';
