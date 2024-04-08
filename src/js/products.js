@@ -27,7 +27,7 @@ function createContentProducts(productsData) {
     const image = productsData.image;
 
     const product = `
-        <article class="article" data-type="${type}">
+        <article class="article" data-type="${type}" data-price="${price}" data-name="${name}">
         <div class="card-img">
             <img src="./img/products/all-products/${image}" alt="product" class="prod-img">
         </div>
@@ -80,7 +80,7 @@ function initProducts() {
                 const productHTML = createContentProducts(el);
                 document.getElementById('products-wrapper').insertAdjacentHTML('beforeend', productHTML);
             });
-            const products = document.querySelectorAll('article'); // Отримання всіх товарів після завантаження
+            const products = document.querySelectorAll('article');
             const buttonsGroup = document.querySelector('.buttons-group');
             const buttons = buttonsGroup.querySelectorAll('button');
 
@@ -125,12 +125,33 @@ document.addEventListener('DOMContentLoaded', () => {
     const sortArrow = document.querySelector('.sort-arrow');
     const selectedItem = document.querySelector('.selected-item');
 
+    function sortProductsByPrice(ascending) {
+        const products = document.querySelectorAll('article');
+        const sortedProducts = Array.from(products).sort((a, b) => {
+            const priceA = parseFloat(a.dataset.price);
+            const priceB = parseFloat(b.dataset.price);
+            return ascending ? priceA - priceB : priceB - priceA;
+        });
+
+        const productsWrapper = document.getElementById('products-wrapper');
+        productsWrapper.innerHTML = '';
+
+        sortedProducts.forEach(product => {
+            productsWrapper.appendChild(product);
+        });
+    }
+
     selectWrapper.addEventListener('click', function (event) {
         const target = event.target;
         const isVisible = select.classList.contains('is-visible');
 
         if (target.tagName === 'LI') {
-            selectedItem.textContent = target.textContent;            
+            selectedItem.textContent = target.textContent;
+            if (selectedItem.textContent === 'Low-Hight') {
+                sortProductsByPrice(true);
+            } else if (selectedItem.textContent === 'Hight-low') {
+                sortProductsByPrice(false);
+            }
         };
 
         if (isVisible) {
