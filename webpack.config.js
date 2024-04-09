@@ -3,7 +3,7 @@ const config = {
     entry: {
         index: './src/js/index.js',
         products: './src/js/products.js',
-        // about: './src/js/about.js',
+        cart: './src/js/cart.js',
     },
     output: {
         filename: '[name].bundle.js',

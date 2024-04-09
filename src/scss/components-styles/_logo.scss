@@ -1,4 +1,5 @@
-.logo {
+.logo,
+.logo-cart {
   background-color: rgba(30, 30, 30, 0.877);
   padding: 25px 15px;
   display: flex;
@@ -23,4 +24,9 @@
     top: 0px;
     right: -3px;
   }
+}
+
+.logo-cart {
+  padding: 15px;
+  justify-content: space-between;
 }
