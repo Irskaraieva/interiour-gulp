@@ -22,7 +22,8 @@
   }
 }
 
-.nav-list {
+.nav-list,
+.nav-list-cart {
   display: flex;
   gap: 5px;
   font-size: 1.2rem;
@@ -90,6 +91,12 @@
 
   @media (max-width: 600px) {
     padding-bottom: 70px;
+  }
+}
+
+.nav-list-cart {
+  @media (max-width: 600px) {
+    padding: 15px;
   }
 }
 

@@ -23,10 +23,43 @@
     width: calc(42px + (80 - 42) * ((100vw - 320px) / 1430));
     top: 0px;
     right: -3px;
+    animation: logoMove 2s ease-in-out;
+  }
+}
+
+@keyframes logoMove {
+  0% {
+    right: 100px;
+    top: -25%;
+  }
+  20% {
+    right: 80px;
+    top: 38%;
+  }
+  40% {
+    right: 60px;
+    top: -25%;
+  }
+  60% {
+    right: 40px;
+    top: 38%;
+  }
+  80% {
+    right: 20px;
+    top: -25%;
+  }
+  90% {
+    right: 6px;
+    top: 38%;
+  }
+  100% {
+    right: -3px;
+    top: 0;
   }
 }
 
 .logo-cart {
   padding: 15px;
   justify-content: space-between;
+  background-color: rgba(30, 30, 30, 0.99);
 }

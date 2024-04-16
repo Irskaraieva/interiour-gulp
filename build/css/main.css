@@ -1295,11 +1295,43 @@ input[type=number] {
   width: calc(42px + 38 * (100vw - 320px) / 1430);
   top: 0px;
   right: -3px;
+  animation: logoMove 2s ease-in-out;
 }
 
+@keyframes logoMove {
+  0% {
+    right: 100px;
+    top: -25%;
+  }
+  20% {
+    right: 80px;
+    top: 38%;
+  }
+  40% {
+    right: 60px;
+    top: -25%;
+  }
+  60% {
+    right: 40px;
+    top: 38%;
+  }
+  80% {
+    right: 20px;
+    top: -25%;
+  }
+  90% {
+    right: 6px;
+    top: 38%;
+  }
+  100% {
+    right: -3px;
+    top: 0;
+  }
+}
 .logo-cart {
   padding: 15px;
   justify-content: space-between;
+  background-color: rgba(30, 30, 30, 0.99);
 }
 
 .header-mob-menu {
@@ -1328,7 +1360,8 @@ input[type=number] {
   }
 }
 
-.nav-list {
+.nav-list,
+.nav-list-cart {
   display: flex;
   gap: 5px;
   font-size: 1.2rem;
@@ -1341,7 +1374,8 @@ input[type=number] {
   justify-content: space-between;
   position: relative;
 }
-.nav-list .button-home {
+.nav-list .button-home,
+.nav-list-cart .button-home {
   border: 1.5px solid rgba(0, 0, 0, 0.7);
   background: rgba(199, 255, 231, 0.32);
   border-radius: 11px;
@@ -1352,28 +1386,33 @@ input[type=number] {
   font-weight: 400;
   transition: all 0.3s;
 }
-.nav-list .button-home:hover {
+.nav-list .button-home:hover,
+.nav-list-cart .button-home:hover {
   background: #1e1e1e;
   color: #f6f6f6;
 }
 @media (max-width: 600px) {
-  .nav-list .button-home {
+  .nav-list .button-home,
+  .nav-list-cart .button-home {
     padding: 5px 18px;
   }
 }
-.nav-list .vertical-line {
+.nav-list .vertical-line,
+.nav-list-cart .vertical-line {
   display: block;
   width: 2px;
   height: 36px;
   background-color: rgba(0, 0, 0, 0.25);
 }
 @media (max-width: 1000px) {
-  .nav-list .vertical-line {
+  .nav-list .vertical-line,
+  .nav-list-cart .vertical-line {
     height: 26px;
     margin: 0 2px;
   }
 }
-.nav-list .nav-list-new {
+.nav-list .nav-list-new,
+.nav-list-cart .nav-list-new {
   font-weight: 400;
   font-size: calc(18px + 10 * (100vw - 360px) / 1400);
   color: rgba(0, 0, 0, 0.9);
@@ -1382,19 +1421,28 @@ input[type=number] {
   border-bottom: 1px solid transparent;
   transition: all 0.3s;
 }
-.nav-list .nav-list-new:hover {
+.nav-list .nav-list-new:hover,
+.nav-list-cart .nav-list-new:hover {
   color: rgb(0, 0, 0);
   border-bottom: 1px solid black;
 }
 @media (max-width: 1000px) {
-  .nav-list {
+  .nav-list,
+  .nav-list-cart {
     border-radius: 0px 0px 11px 11px;
     padding: 15px;
   }
 }
 @media (max-width: 600px) {
-  .nav-list {
+  .nav-list,
+  .nav-list-cart {
     padding-bottom: 70px;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav-list-cart {
+    padding: 15px;
   }
 }
 
