@@ -3,6 +3,7 @@ const config = {
     entry: {
         index: './src/js/index.js',
         products: './src/js/products.js',
+        product: './src/js/product.js',
         cart: './src/js/cart.js',
     },
     output: {

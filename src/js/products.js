@@ -12,12 +12,12 @@ function createContentProducts(productsData) {
 
     const product = `
         <article class="article" data-type="${type}" data-price="${price}" data-name="${name}">
-        <div class="card-img">
-            <img src="./img/products/all-products/${image}" alt="product" class="prod-img">
+        <div class="card-img">            
+            <img src="./img/products/all-products/${image}" alt="product" class="prod-img">    
         </div>
         <div class="card-description">
             <span class="brand-name">${brand} </span>
-            <a class="good-name-wrapper">
+            <a href="./product.html" class="good-name-wrapper">
                 <h3 class="good-name">${name}</h3>
                 <p>...</p>
             </a>
@@ -40,12 +40,12 @@ function createContentProducts(productsData) {
             </div>
             <div class="card-bottom">
                 <span class="price"> $${price}</span>
-                <div class="shopping-bag">
+                <a href="./cart.html" class="shopping-bag">
                     <img src="./img/global-images/shopping-bag.svg" height="32px" alt="search-img">
-                </div>
+                </a>
             </div>
         </div>
-        <a href="#!" class="card-link"></a>
+        <a href="./product.html" class="card-link"></a>
     </article>
     `;
     return product;
